@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML xmlns="http://www.w3.org/TR/REC-html40" xmlns:o = 
 "urn:schemas-microsoft-com:office:office" xmlns:dt = 
 "uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><HEAD><META content="IE=5.0000" 
@@ -9,27 +9,25 @@ http-equiv="X-UA-Compatible">
 <META name=GENERATOR content="MSHTML 11.00.10570.1001"><LINK id=Main-File 
 rel=Main-File href="gitcookbook.htm"><LINK rel=File-List 
 href="gitcookbook_files/filelist.xml"></HEAD>
-<BODY lang=en-IL style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas">
+<BODY lang=en-US style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas">
 <DIV style="DIRECTION: ltr">
-<DIV style="WIDTH: 13.831in; MARGIN-TOP: 0in; DIRECTION: ltr; MARGIN-LEFT: 0in">
-<DIV style="WIDTH: 8in; MARGIN-TOP: 0in; DIRECTION: ltr; MARGIN-LEFT: 0.081in">
-<P lang=en-US style="FONT-SIZE: 20pt; FONT-FAMILY: Consolas; MARGIN: 0in"><A 
-href="../index.htm">&lt;HOME</A><BR><SPAN 
-style="mso-spacerun: yes">&nbsp;</SPAN>git cookbook</P></DIV>
+<DIV style="WIDTH: 13.841in; MARGIN-TOP: 0in; DIRECTION: ltr; MARGIN-LEFT: 0in">
 <DIV 
-style="WIDTH: 10.975in; MARGIN-TOP: 0.59in; DIRECTION: ltr; MARGIN-LEFT: 0.081in">
-<P lang=en-US 
-style="FONT-SIZE: 16pt; FONT-FAMILY: Calibri; COLOR: #1e4e79; MARGIN: 0in">If 
+style="WIDTH: 2.385in; MARGIN-TOP: 0in; DIRECTION: ltr; MARGIN-LEFT: 0.091in">
+<P style="FONT-SIZE: 20pt; FONT-FAMILY: Consolas; MARGIN: 0in">git 
+cookbook</P></DIV>
+<DIV 
+style="WIDTH: 10.986in; MARGIN-TOP: 0.913in; DIRECTION: ltr; MARGIN-LEFT: 0.091in">
+<P style="FONT-SIZE: 16pt; FONT-FAMILY: Calibri; COLOR: #1e4e79; MARGIN: 0in">If 
 you follow along with actual files of your own, it will slow you down, but the 
 hands on experience will be worth it.</P>
-<P lang=en-US 
-style="FONT-SIZE: 16pt; FONT-FAMILY: Calibri; COLOR: #1e4e79; MARGIN: 0in">We 
+<P style="FONT-SIZE: 16pt; FONT-FAMILY: Calibri; COLOR: #1e4e79; MARGIN: 0in">We 
 are going to learn about :</P>
-<P lang=en-US style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">init, 
-restore, add, commit, log, diff, revert, checkout, stash, merge, branch, push, 
+<P style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">init, restore, 
+add, commit, log, diff, revert, checkout, stash, merge, branch, push, 
 pull</P></DIV>
 <TABLE 
-style="BORDER-LEFT-WIDTH: 0pt; BORDER-RIGHT-WIDTH: 0pt; WIDTH: 13.06in; BORDER-BOTTOM-WIDTH: 0pt; MARGIN-TOP: 0.395in; BORDER-COLLAPSE: collapse; DIRECTION: ltr; MARGIN-LEFT: 0in; BORDER-TOP-WIDTH: 0pt" 
+style="BORDER-LEFT-WIDTH: 0pt; BORDER-RIGHT-WIDTH: 0pt; WIDTH: 13.07in; BORDER-BOTTOM-WIDTH: 0pt; MARGIN-TOP: 0.393in; BORDER-COLLAPSE: collapse; DIRECTION: ltr; MARGIN-LEFT: 0in; BORDER-TOP-WIDTH: 0pt" 
 cellSpacing=0 cols=3 cellPadding=0 border=0 valign="top">
   <TBODY>
   <TR>
@@ -38,15 +36,15 @@ cellSpacing=0 cols=3 cellPadding=0 border=0 valign="top">
     vAlign=top>
       <P style="FONT-SIZE: 1pt">&nbsp;</P></TD>
     <TD 
-    style="FONT-SIZE: 1pt; HEIGHT: 1px; WIDTH: 6.65in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
+    style="FONT-SIZE: 1pt; HEIGHT: 1px; WIDTH: 6.67in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
     vAlign=top>
       <P style="FONT-SIZE: 1pt"></P></TD>
     <TD 
-    style="FONT-SIZE: 1pt; HEIGHT: 1px; WIDTH: 0.68in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
+    style="FONT-SIZE: 1pt; HEIGHT: 1px; WIDTH: 0.662in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
     vAlign=top>
       <P style="FONT-SIZE: 1pt"></P></TD>
     <TD 
-    style="FONT-SIZE: 1pt; HEIGHT: 1px; WIDTH: 5.729in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
+    style="FONT-SIZE: 1pt; HEIGHT: 1px; WIDTH: 5.736in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
     vAlign=top>
       <P style="FONT-SIZE: 1pt"></P></TD></TR>
   <TR>
@@ -55,153 +53,165 @@ cellSpacing=0 cols=3 cellPadding=0 border=0 valign="top">
     vAlign=top>
       <P style="FONT-SIZE: 1pt">&nbsp;</P></TD>
     <TD 
-    style="FONT-SIZE: 1pt; HEIGHT: 0.027in; WIDTH: 6.65in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
+    style="FONT-SIZE: 1pt; HEIGHT: 0.027in; WIDTH: 6.67in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
     vAlign=top>
       <P style="FONT-SIZE: 1pt"></P></TD>
     <TD 
-    style="FONT-SIZE: 1pt; HEIGHT: 0.027in; WIDTH: 0.68in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
+    style="FONT-SIZE: 1pt; HEIGHT: 0.027in; WIDTH: 0.662in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
     vAlign=top>
       <P style="FONT-SIZE: 1pt"></P></TD>
     <TD 
-    style="HEIGHT: 8.123in; WIDTH: 5.729in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
-    vAlign=top rowSpan=2>
-      <H2 lang=en-US 
-      style="FONT-SIZE: 14pt; FONT-FAMILY: Consolas; COLOR: #2e75b5; MARGIN: 0in">Solo 
-      developing, multiple features in parallel</H2>
-      <P lang=en-US 
-      style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">branches</P>
-      <P lang=en-US 
-      style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">&nbsp;</P>
-      <P lang=en-US 
-      style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">after stage 
-      "repeat indefinitely" from previous explanation</P>
-      <OL 
-      style="FONT-SIZE: 11pt; MARGIN-BOTTOM: 0in; FONT-FAMILY: Consolas; unicode-bidi: embed; MARGIN-TOP: 0in; FONT-WEIGHT: normal; DIRECTION: ltr; FONT-STYLE: normal" 
-      type=1>
-        <LI lang=en-US 
-        style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px" 
-        value=1><SPAN 
-        style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: normal; FONT-STYLE: normal">Create 
-        a new branch</SPAN><SPAN 
-        style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold; COLOR: #c00000; FONT-STYLE: normal"><BR>git 
-        checkout</SPAN><SPAN 
-        style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold; FONT-STYLE: normal"> 
-        -b &lt;branch-name&gt;</SPAN> 
-        <LI lang=en-US 
-        style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px"><SPAN 
-        style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas">Now it is possible to 
-        make changes to files in multiple branches.</SPAN> 
-        <OL 
-        style="FONT-SIZE: 11pt; MARGIN-BOTTOM: 0in; FONT-FAMILY: Consolas; unicode-bidi: embed; MARGIN-TOP: 0in; FONT-WEIGHT: normal; DIRECTION: ltr; FONT-STYLE: normal" 
-        type=a>
-          <LI lang=en-US 
-          style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px" 
-          value=1><SPAN 
-          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: normal; FONT-STYLE: normal">However, 
-          moving between branches when new text is written and staged will 
-          prompt this error message:<BR></SPAN><SPAN 
-          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: normal; COLOR: #b2a1c7; FONT-STYLE: normal">error: 
-          Your local changes to the following files would be overwritten by 
-          checkout:<BR><SPAN 
-          style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-          </SPAN>&lt;list-of-changed-files&gt;<BR>Please commit your changes or 
-          stash them before you switch branches.<BR>Aborting</SPAN> 
-          <LI lang=en-US 
-          style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px"><SPAN 
-          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas">If the change in 
-          current branch is not staged then we will get this error 
-          message:<BR></SPAN><SPAN 
-          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; COLOR: #c55a11">error: 
-          The following untracked working tree files would be overwritten by 
-          checkout:<BR><SPAN 
-          style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-          </SPAN>&lt;list-of-changed-files&gt;<BR>Please move or remove them 
-          before you switch branches.<BR>Aborting</SPAN> </LI></OL></LI></OL>
-      <P lang=en-US 
-      style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in 0in 0in 0.375in">our 
-      options are to (<SPAN style="COLOR: #c55a11">add&gt;</SPAN>)<SPAN 
-      style="COLOR: #b2a1c7">commit</SPAN> or (<SPAN 
-      style="COLOR: #c55a11">add&gt;</SPAN>)<SPAN 
-      style="COLOR: #b2a1c7">stash</SPAN>. in case we don't want to commit, we 
-      stash<BR><SPAN style="FONT-WEIGHT: bold; COLOR: #c00000">&gt;git 
-      stash<BR></SPAN>pay attention: any change to files that is not commited or 
-      stashed will follow you to other branches</P>
-      <OL 
-      style="FONT-SIZE: 11pt; MARGIN-BOTTOM: 0in; FONT-FAMILY: Consolas; unicode-bidi: embed; MARGIN-TOP: 0in; FONT-WEIGHT: normal; DIRECTION: ltr; FONT-STYLE: normal" 
-      type=1>
-        <LI lang=en-US 
-        style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px" 
-        value=3><SPAN 
-        style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: normal; FONT-STYLE: normal">now 
-        it is actually possible to move away from the new branch with the 
-        change.<BR></SPAN><SPAN 
-        style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold; COLOR: #c00000; FONT-STYLE: normal">git 
-        checkout</SPAN><SPAN 
-        style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold; FONT-STYLE: normal"> 
-        &lt;branch-name&gt;</SPAN> 
-        <LI lang=en-US 
-        style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px"><SPAN 
-        style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas">when going back to the 
-        branch with stashed changes, in order to unstash the changed we 
-        run<BR></SPAN><SPAN 
-        style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold; COLOR: #c00000">&gt;git 
-        stash pop<BR></SPAN><SPAN 
-        style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas">if we want to just see 
-        the stashed changed:<BR></SPAN><SPAN 
-        style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold; COLOR: #c00000">&gt;git 
-        stash list<BR>&gt;git stash show</SPAN> 
-        <LI lang=en-US 
-        style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px"><SPAN 
-        style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas">So we know how to work in 
-        multiple branches, now let's merge them.<BR>&gt;</SPAN><SPAN 
-        style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold; COLOR: #c00000">git 
-        checkout &lt;branch-we-want-to-merge-into&gt;<BR></SPAN><SPAN 
-        style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold">&gt;</SPAN><SPAN 
-        style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold; COLOR: #c00000">git 
-        merge &lt;branch-we-want-to-merge-from&gt;</SPAN> 
-        <LI lang=en-US 
-        style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px"><SPAN 
-        style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas">If we no longer need the 
-        branch we merged from, we delete it<BR>&gt;</SPAN><SPAN 
-        style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold; COLOR: #c00000">git 
-        branch -d &lt;branch-we-merged-from&gt;</SPAN> </LI></OL>
-      <H3 lang=en-US 
-      style="FONT-SIZE: 12pt; FONT-FAMILY: Consolas; COLOR: #5b9bd5; MARGIN: 0in">&nbsp;</H3>
-      <P lang=en-US 
-      style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">&nbsp;</P></TD></TR>
-  <TR>
-    <TD 
-    style="FONT-SIZE: 1pt; HEIGHT: 8.096in; WIDTH: 1px; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
-    vAlign=top>
-      <P style="FONT-SIZE: 1pt">&nbsp;</P></TD>
-    <TD 
-    style="HEIGHT: 8.254in; WIDTH: 6.65in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
+    style="HEIGHT: 8.223in; WIDTH: 5.736in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
     vAlign=top rowSpan=2>
       <UL 
       style="MARGIN-BOTTOM: 0in; unicode-bidi: embed; MARGIN-TOP: 0in; DIRECTION: ltr">
-        <H1 lang=en-US 
-        style="FONT-SIZE: 16pt; FONT-FAMILY: Consolas; COLOR: #1e4e79; MARGIN: 0in">My 
-        own explanations</H1>
-        <P lang=en-US 
-        style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">&nbsp;</P>
-        <H2 lang=en-US 
-        style="FONT-SIZE: 14pt; FONT-FAMILY: Consolas; COLOR: #2e75b5; MARGIN: 0in">solo 
-        developing, 1 feature at a time</H2>
-        <P lang=en-US 
-        style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">No branches, 
-        no pushing and pulling, only adds and commits and rolling back unwanted 
-        changes in every step of the way.</P>
-        <P lang=en-US 
-        style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">&nbsp;</P>
+        <P 
+        style="FONT-SIZE: 6pt; FONT-FAMILY: Consolas; MARGIN: 0in">consolas</P>
+        <H2 
+        style="FONT-SIZE: 14pt; FONT-FAMILY: Consolas; COLOR: #2e75b5; MARGIN: 0in">Solo 
+        developing, multiple features in parallel</H2>
+        <P 
+        style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">branches</P>
+        <P 
+style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">&nbsp;</P>
+        <P style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">after 
+        stage "repeat indefinitely" from previous explanation</P>
         <OL 
         style="FONT-SIZE: 11pt; MARGIN-BOTTOM: 0in; FONT-FAMILY: Consolas; unicode-bidi: embed; MARGIN-TOP: 0in; FONT-WEIGHT: normal; DIRECTION: ltr; FONT-STYLE: normal" 
         type=1>
-          <LI lang=en-US 
+          <LI 
+          style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px" 
+          value=1><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: normal; FONT-STYLE: normal">Create 
+          a new branch</SPAN><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold; COLOR: #c00000; FONT-STYLE: normal"><BR></SPAN><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold; FONT-STYLE: normal">&gt;</SPAN><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold; COLOR: #c00000; FONT-STYLE: normal">git 
+          checkout -b</SPAN><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold; FONT-STYLE: normal"> 
+          &lt;branch-name&gt;</SPAN> 
+          <LI 
+          style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px"><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas">Now it is possible to 
+          make changes to files in multiple branches.</SPAN> 
+          <OL 
+          style="FONT-SIZE: 11pt; MARGIN-BOTTOM: 0in; FONT-FAMILY: Consolas; unicode-bidi: embed; MARGIN-TOP: 0in; FONT-WEIGHT: normal; DIRECTION: ltr; FONT-STYLE: normal" 
+          type=a>
+            <LI 
+            style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px" 
+            value=1><SPAN 
+            style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: normal; FONT-STYLE: normal">However, 
+            moving between branches when new text is written and staged will 
+            prompt this error message:<BR></SPAN><SPAN 
+            style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: normal; COLOR: #b2a1c7; FONT-STYLE: normal">error: 
+            Your local changes to the following files would be overwritten by 
+            checkout:<BR><SPAN 
+            style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            </SPAN>&lt;list-of-changed-files&gt;<BR>Please commit your changes 
+            or stash them before you switch branches.<BR>Aborting</SPAN> 
+            <LI 
+            style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px"><SPAN 
+            style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas">If the change in 
+            current branch is not staged then we will get this error 
+            message:<BR></SPAN><SPAN 
+            style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; COLOR: #c55a11">error: 
+            The following untracked working tree files would be overwritten by 
+            checkout:<BR><SPAN 
+            style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            </SPAN>&lt;list-of-changed-files&gt;<BR>Please move or remove them 
+            before you switch branches.<BR>Aborting</SPAN> </LI></OL></LI></OL>
+        <P 
+        style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in 0in 0in 0.375in">our 
+        options are to (<SPAN style="COLOR: #c55a11">add&gt;</SPAN>)<SPAN 
+        style="COLOR: #b2a1c7">commit</SPAN> or (<SPAN 
+        style="COLOR: #c55a11">add&gt;</SPAN>)<SPAN 
+        style="COLOR: #b2a1c7">stash</SPAN>. in case we don't want to commit, we 
+        stash<BR><SPAN style="FONT-WEIGHT: bold; COLOR: #c00000">&gt;git 
+        stash<BR></SPAN>pay attention: any change to files that is not committed 
+        or stashed will follow you to other branches</P>
+        <OL 
+        style="FONT-SIZE: 11pt; MARGIN-BOTTOM: 0in; FONT-FAMILY: Consolas; unicode-bidi: embed; MARGIN-TOP: 0in; FONT-WEIGHT: normal; DIRECTION: ltr; FONT-STYLE: normal" 
+        type=1>
+          <LI 
+          style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px" 
+          value=3><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: normal; FONT-STYLE: normal">now 
+          it is actually possible to move away from the new branch with the 
+          change.<BR></SPAN><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold; COLOR: #c00000; FONT-STYLE: normal">git 
+          checkout</SPAN><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold; FONT-STYLE: normal"> 
+          &lt;branch-name&gt;</SPAN> 
+          <LI 
+          style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px"><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas">when going back to the 
+          branch with stashed changes, in order to unstash the changed we 
+          run<BR></SPAN><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold; COLOR: #c00000">&gt;git 
+          stash pop<BR></SPAN><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas">if we want to just see 
+          the stashed changed:<BR></SPAN><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold; COLOR: #c00000">&gt;git 
+          stash list<BR>&gt;git stash show</SPAN> 
+          <LI 
+          style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px"><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas">So we know how to work 
+          in multiple branches, now let's merge them.<BR>&gt;</SPAN><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold; COLOR: #c00000">git 
+          checkout </SPAN><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold">&lt;branch-we-want-to-merge-into&gt;</SPAN><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold; COLOR: #c00000"><BR></SPAN><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold">&gt;</SPAN><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold; COLOR: #c00000">git 
+          merge </SPAN><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold">&lt;branch-we-want-to-merge-from&gt;</SPAN> 
+
+          <LI 
+          style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px"><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas">If we no longer need 
+          the branch we merged from, we delete it<BR>&gt;</SPAN><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold; COLOR: #c00000">git 
+          branch -d </SPAN><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold">&lt;branch-we-merged-from&gt;</SPAN> 
+          </LI></OL>
+        <H3 
+        style="FONT-SIZE: 12pt; FONT-FAMILY: Consolas; COLOR: #5b9bd5; MARGIN: 0in">&nbsp;</H3>
+        <P 
+      style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">&nbsp;</P></UL></TD></TR>
+  <TR>
+    <TD 
+    style="FONT-SIZE: 1pt; HEIGHT: 8.196in; WIDTH: 1px; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
+    vAlign=top>
+      <P style="FONT-SIZE: 1pt">&nbsp;</P></TD>
+    <TD 
+    style="HEIGHT: 8.354in; WIDTH: 6.67in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
+    vAlign=top rowSpan=2>
+      <UL 
+      style="MARGIN-BOTTOM: 0in; unicode-bidi: embed; MARGIN-TOP: 0in; DIRECTION: ltr">
+        <P 
+        style="FONT-SIZE: 6pt; FONT-FAMILY: Consolas; MARGIN: 0in">consolas</P>
+        <H1 
+        style="FONT-SIZE: 16pt; FONT-FAMILY: Consolas; COLOR: #1e4e79; MARGIN: 0in">My 
+        own explanations</H1>
+        <P 
+style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">&nbsp;</P>
+        <H2 
+        style="FONT-SIZE: 14pt; FONT-FAMILY: Consolas; COLOR: #2e75b5; MARGIN: 0in">solo 
+        developing, 1 feature at a time</H2>
+        <P style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">No 
+        branches, no pushing and pulling, only adds and commits and rolling back 
+        unwanted changes in every step of the way.</P>
+        <P 
+style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">&nbsp;</P>
+        <OL 
+        style="FONT-SIZE: 11pt; MARGIN-BOTTOM: 0in; FONT-FAMILY: Consolas; unicode-bidi: embed; MARGIN-TOP: 0in; FONT-WEIGHT: normal; DIRECTION: ltr; FONT-STYLE: normal" 
+        type=1>
+          <LI 
           style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px" 
           value=1><SPAN 
           style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: normal; FONT-STYLE: normal">create 
           a project (at the bare minimum - a directory).</SPAN> 
-          <LI lang=en-US 
+          <LI 
           style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px"><SPAN 
           style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas">create git reopsitory 
           in the root of the project.<BR></SPAN><SPAN 
@@ -213,33 +223,33 @@ cellSpacing=0 cols=3 cellPadding=0 border=0 valign="top">
           init</SPAN><SPAN 
           style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold"> 
           .</SPAN> 
-          <LI lang=en-US 
+          <LI 
           style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px"><SPAN 
           style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas">create 
           files<BR>&gt;</SPAN><SPAN 
           style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold">touch 
           &lt;files&gt;</SPAN> </LI></OL>
-        <P lang=en-US 
+        <P 
         style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in 0in 0in 0.375in">git 
         is aware of these files but they are <SPAN 
         style="FONT-WEIGHT: bold; COLOR: #c00000">untracked</SPAN>.</P>
         <OL 
         style="FONT-SIZE: 11pt; MARGIN-BOTTOM: 0in; FONT-FAMILY: Consolas; unicode-bidi: embed; MARGIN-TOP: 0in; FONT-WEIGHT: normal; DIRECTION: ltr; FONT-STYLE: normal" 
         type=1>
-          <LI lang=en-US 
+          <LI 
           style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px" 
           value=4><SPAN 
           style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: normal; FONT-STYLE: normal">we 
           can make changes to these untracked files. In a way they are tracked 
           because it's possible to revert the changes made in them since last 
           commit</SPAN> </LI></OL>
-        <H3 lang=en-US 
+        <H3 
         style="FONT-SIZE: 12pt; FONT-FAMILY: Consolas; COLOR: #5b9bd5; MARGIN: 0in 0in 0in 0.375in">rolling 
         back untracked changes</H3>
         <OL 
         style="FONT-SIZE: 11pt; MARGIN-BOTTOM: 0in; FONT-FAMILY: Consolas; unicode-bidi: embed; MARGIN-TOP: 0in; FONT-WEIGHT: normal; DIRECTION: ltr; FONT-STYLE: normal" 
         type=a>
-          <LI lang=en-US 
+          <LI 
           style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px" 
           value=1><SPAN 
           style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: normal; FONT-STYLE: normal">&gt;</SPAN><SPAN 
@@ -250,7 +260,7 @@ cellSpacing=0 cols=3 cellPadding=0 border=0 valign="top">
         <OL 
         style="FONT-SIZE: 11pt; MARGIN-BOTTOM: 0in; FONT-FAMILY: Consolas; unicode-bidi: embed; MARGIN-TOP: 0in; FONT-WEIGHT: normal; DIRECTION: ltr; FONT-STYLE: normal" 
         type=1>
-          <LI lang=en-US 
+          <LI 
           style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px" 
           value=5><SPAN 
           style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: normal; FONT-STYLE: normal">track 
@@ -261,10 +271,10 @@ cellSpacing=0 cols=3 cellPadding=0 border=0 valign="top">
           style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold; FONT-STYLE: normal"> 
           &lt;files&gt;</SPAN><SPAN 
           style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: normal; FONT-STYLE: normal"><BR>now 
-          they are "changes to be commited" meaning they are </SPAN><SPAN 
+          they are "changes to be committed" meaning they are </SPAN><SPAN 
           style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold; COLOR: #c00000; FONT-STYLE: normal">staged</SPAN> 
 
-          <LI lang=en-US 
+          <LI 
           style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px"><SPAN 
           style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas">make modifications to 
           the files<BR></SPAN><SPAN 
@@ -275,7 +285,7 @@ cellSpacing=0 cols=3 cellPadding=0 border=0 valign="top">
           style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold; COLOR: #c00000">not 
           staged</SPAN><SPAN style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas">. at 
           this point a git commit will not include the modification.</SPAN> 
-          <LI lang=en-US 
+          <LI 
           style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px"><SPAN 
           style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas">stage the modified 
           files<BR></SPAN><SPAN 
@@ -284,31 +294,31 @@ cellSpacing=0 cols=3 cellPadding=0 border=0 valign="top">
           add</SPAN><SPAN 
           style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold"> 
           &lt;files&gt;</SPAN> 
-          <LI lang=en-US 
+          <LI 
           style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px"><SPAN 
           style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas">commit the 
           modifications<BR></SPAN><SPAN 
           style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold">&gt;</SPAN><SPAN 
           style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold; COLOR: #c00000">git 
           commit</SPAN> 
-          <LI lang=en-US 
+          <LI 
           style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px"><SPAN 
           style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas">repeat 5-8 indefinitely 
           until the project is finished.</SPAN> </LI></OL>
-        <H3 lang=en-US 
+        <H3 
         style="FONT-SIZE: 12pt; FONT-FAMILY: Consolas; COLOR: #5b9bd5; MARGIN: 0in">rolling 
         back a commit or commits</H3>
         <OL 
         style="FONT-SIZE: 11pt; MARGIN-BOTTOM: 0in; FONT-FAMILY: Consolas; unicode-bidi: embed; MARGIN-TOP: 0in; FONT-WEIGHT: normal; DIRECTION: ltr; FONT-STYLE: normal" 
         type=1>
-          <LI lang=en-US 
+          <LI 
           style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px" 
           value=10><SPAN 
           style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: normal; FONT-STYLE: normal">see 
           commit history<BR>&gt;</SPAN><SPAN 
           style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold; COLOR: #c00000; FONT-STYLE: normal">git 
           log</SPAN> 
-          <LI lang=en-US 
+          <LI 
           style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px"><SPAN 
           style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas">go over commits, check 
           differences and find the commit you want to go back 
@@ -326,25 +336,28 @@ cellSpacing=0 cols=3 cellPadding=0 border=0 valign="top">
           style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas"> - shows commit diff 
           with head<BR>(google the difference between git diff and git 
           difftool)<BR></SPAN>&nbsp; </LI></OL>
-        <H4 lang=en-US 
+        <H4 
         style="FONT-SIZE: 12pt; FONT-FAMILY: Consolas; COLOR: #5b9bd5; MARGIN: 0in"><SPAN 
         style="FONT-STYLE: italic">revert in current branch</SPAN></H4>
         <OL 
         style="FONT-SIZE: 11pt; MARGIN-BOTTOM: 0in; FONT-FAMILY: Consolas; unicode-bidi: embed; MARGIN-TOP: 0in; FONT-WEIGHT: normal; DIRECTION: ltr; FONT-STYLE: normal" 
         type=1>
-          <LI lang=en-US 
+          <LI 
           style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px" 
           value=11><SPAN 
           style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: normal; FONT-STYLE: normal">&gt;</SPAN><SPAN 
           style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold; COLOR: #c00000; FONT-STYLE: normal">git 
-          revert HEAD~&lt;num-commits-to-revert&gt;..HEAD</SPAN> </LI></OL>
-        <H4 lang=en-US 
+          revert HEAD~</SPAN><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold; FONT-STYLE: normal">&lt;num-commits-to-revert&gt;</SPAN><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold; COLOR: #c00000; FONT-STYLE: normal">..HEAD</SPAN> 
+          </LI></OL>
+        <H4 
         style="FONT-SIZE: 12pt; FONT-FAMILY: Consolas; COLOR: #5b9bd5; MARGIN: 0in"><SPAN 
         style="FONT-STYLE: italic">revert in new branch</SPAN></H4>
         <OL 
         style="FONT-SIZE: 11pt; MARGIN-BOTTOM: 0in; FONT-FAMILY: Consolas; unicode-bidi: embed; MARGIN-TOP: 0in; FONT-WEIGHT: normal; DIRECTION: ltr; FONT-STYLE: normal" 
         type=1>
-          <LI lang=en-US 
+          <LI 
           style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px" 
           value=11><SPAN 
           style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: normal; FONT-STYLE: normal">Create 
@@ -358,7 +371,7 @@ cellSpacing=0 cols=3 cellPadding=0 border=0 valign="top">
           style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold; FONT-STYLE: normal"> 
           &lt;new-branch-name&gt;</SPAN> </LI></OL></UL></TD>
     <TD 
-    style="FONT-SIZE: 1pt; HEIGHT: 8.096in; WIDTH: 0.68in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
+    style="FONT-SIZE: 1pt; HEIGHT: 8.196in; WIDTH: 0.662in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
     vAlign=top>
       <P style="FONT-SIZE: 1pt"></P></TD></TR>
   <TR>
@@ -367,16 +380,16 @@ cellSpacing=0 cols=3 cellPadding=0 border=0 valign="top">
     vAlign=top>
       <P style="FONT-SIZE: 1pt">&nbsp;</P></TD>
     <TD 
-    style="FONT-SIZE: 1pt; HEIGHT: 0.156in; WIDTH: 0.68in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
+    style="FONT-SIZE: 1pt; HEIGHT: 0.156in; WIDTH: 0.662in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
     vAlign=top>
       <P style="FONT-SIZE: 1pt"></P></TD>
     <TD 
-    style="FONT-SIZE: 1pt; HEIGHT: 0.156in; WIDTH: 5.729in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
+    style="FONT-SIZE: 1pt; HEIGHT: 0.156in; WIDTH: 5.736in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
     vAlign=top>
       <P style="FONT-SIZE: 1pt"></P></TD></TR></TBODY></TABLE>
 <TABLE 
-style="BORDER-LEFT-WIDTH: 0pt; BORDER-RIGHT-WIDTH: 0pt; WIDTH: 13.75in; BORDER-BOTTOM-WIDTH: 0pt; MARGIN-TOP: 0.592in; BORDER-COLLAPSE: collapse; DIRECTION: ltr; MARGIN-LEFT: 0.081in; BORDER-TOP-WIDTH: 0pt" 
-cellSpacing=0 cols=3 cellPadding=0 border=0 valign="top">
+style="BORDER-LEFT-WIDTH: 0pt; BORDER-RIGHT-WIDTH: 0pt; WIDTH: 13.757in; BORDER-BOTTOM-WIDTH: 0pt; MARGIN-TOP: 0.492in; BORDER-COLLAPSE: collapse; DIRECTION: ltr; MARGIN-LEFT: 0.084in; BORDER-TOP-WIDTH: 0pt" 
+cellSpacing=0 cols=4 cellPadding=0 border=0 valign="top">
   <TBODY>
   <TR>
     <TD 
@@ -384,15 +397,19 @@ cellSpacing=0 cols=3 cellPadding=0 border=0 valign="top">
     vAlign=top>
       <P style="FONT-SIZE: 1pt">&nbsp;</P></TD>
     <TD 
-    style="FONT-SIZE: 1pt; HEIGHT: 1px; WIDTH: 5.811in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
+    style="FONT-SIZE: 1pt; HEIGHT: 1px; WIDTH: 5.861in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
     vAlign=top>
       <P style="FONT-SIZE: 1pt"></P></TD>
     <TD 
-    style="FONT-SIZE: 1pt; HEIGHT: 1px; WIDTH: 1.437in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
+    style="FONT-SIZE: 1pt; HEIGHT: 1px; WIDTH: 1.395in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
     vAlign=top>
       <P style="FONT-SIZE: 1pt"></P></TD>
     <TD 
-    style="FONT-SIZE: 1pt; HEIGHT: 1px; WIDTH: 6.5in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
+    style="FONT-SIZE: 1pt; HEIGHT: 1px; WIDTH: 0.584in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
+    vAlign=top>
+      <P style="FONT-SIZE: 1pt"></P></TD>
+    <TD 
+    style="FONT-SIZE: 1pt; HEIGHT: 1px; WIDTH: 5.915in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
     vAlign=top>
       <P style="FONT-SIZE: 1pt"></P></TD></TR>
   <TR>
@@ -401,151 +418,226 @@ cellSpacing=0 cols=3 cellPadding=0 border=0 valign="top">
     vAlign=top>
       <P style="FONT-SIZE: 1pt">&nbsp;</P></TD>
     <TD 
-    style="HEIGHT: 2.431in; WIDTH: 5.811in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
-    vAlign=top rowSpan=2>
-      <H2 lang=en-US 
-      style="FONT-SIZE: 14pt; FONT-FAMILY: Consolas; COLOR: #2e75b5; MARGIN: 0in">Upload 
-      project to github and make contributions to it (no collaboration).</H2>
-      <P lang=en-US 
-      style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">&nbsp;</P>
-      <OL 
-      style="FONT-SIZE: 11pt; MARGIN-BOTTOM: 0in; FONT-FAMILY: Consolas; unicode-bidi: embed; MARGIN-TOP: 0in; FONT-WEIGHT: normal; DIRECTION: ltr; FONT-STYLE: normal" 
-      type=1>
-        <LI lang=en-US 
-        style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px" 
-        value=1><SPAN 
-        style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: normal; FONT-STYLE: normal">Init 
-        a git repo in the directory of the project<BR>&gt;cd &lt;project root 
-        path&gt;</SPAN> </LI></OL>
-      <P lang=en-US 
-      style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in 0in 0in 0.375in">&gt;git 
-      init .</P>
-      <OL 
-      style="FONT-SIZE: 11pt; MARGIN-BOTTOM: 0in; FONT-FAMILY: Consolas; unicode-bidi: embed; MARGIN-TOP: 0in; FONT-WEIGHT: normal; DIRECTION: ltr; FONT-STYLE: normal" 
-      type=1>
-        <LI lang=en-US 
-        style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px" 
-        value=2><SPAN 
-        style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: normal; FONT-STYLE: normal">create 
-        remote repo </SPAN><A 
-        href="https://docs.github.com/en/get-started/quickstart/create-a-repo"><SPAN 
-        style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas">through 
-        github.com</SPAN></A><SPAN 
-        style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: normal; FONT-STYLE: normal"> 
-        or </SPAN><A 
-        href="https://docs.github.com/en/get-started/quickstart/create-a-repo"><SPAN 
-        style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas">gh cli</SPAN></A> 
-        <LI lang=en-US 
-        style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px"><SPAN 
-        style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas">synchronize remote and 
-        local repos</SPAN> 
+    style="HEIGHT: 4.889in; WIDTH: 5.861in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
+    vAlign=top rowSpan=5>
+      <UL 
+      style="MARGIN-BOTTOM: 0in; unicode-bidi: embed; MARGIN-TOP: 0in; DIRECTION: ltr">
+        <P 
+        style="FONT-SIZE: 6pt; FONT-FAMILY: Consolas; MARGIN: 0in">consolas</P>
+        <H2 
+        style="FONT-SIZE: 14pt; FONT-FAMILY: Consolas; COLOR: #2e75b5; MARGIN: 0in">Upload 
+        project to github and make contributions to it (no collaboration).</H2>
+        <P 
+style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">&nbsp;</P>
+        <OL 
+        style="FONT-SIZE: 11pt; MARGIN-BOTTOM: 0in; FONT-FAMILY: Consolas; unicode-bidi: embed; MARGIN-TOP: 0in; FONT-WEIGHT: normal; DIRECTION: ltr; FONT-STYLE: normal" 
+        type=1>
+          <LI 
+          style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px" 
+          value=1><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: normal; FONT-STYLE: normal">Init 
+          a git repo in the directory of the project<BR>&gt;cd &lt;project root 
+          path&gt;</SPAN> </LI></OL>
+        <P 
+        style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in 0in 0in 0.375in">&gt;git 
+        init .</P>
+        <OL 
+        style="FONT-SIZE: 11pt; MARGIN-BOTTOM: 0in; FONT-FAMILY: Consolas; unicode-bidi: embed; MARGIN-TOP: 0in; FONT-WEIGHT: normal; DIRECTION: ltr; FONT-STYLE: normal" 
+        type=1>
+          <LI 
+          style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px" 
+          value=2><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: normal; FONT-STYLE: normal">create 
+          remote repo </SPAN><A 
+          href="https://docs.github.com/en/get-started/quickstart/create-a-repo"><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas">through 
+          github.com</SPAN></A><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: normal; FONT-STYLE: normal"> 
+          or </SPAN><A 
+          href="https://docs.github.com/en/get-started/quickstart/create-a-repo"><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas">gh cli</SPAN></A> 
+          <LI 
+          style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px"><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas">synchronize remote and 
+          local repos</SPAN> 
+          <OL 
+          style="FONT-SIZE: 11pt; MARGIN-BOTTOM: 0in; FONT-FAMILY: Consolas; unicode-bidi: embed; MARGIN-TOP: 0in; FONT-WEIGHT: normal; DIRECTION: ltr; FONT-STYLE: normal" 
+          type=a>
+            <LI 
+            style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px" 
+            value=1><SPAN 
+            style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: normal; FONT-STYLE: normal">if 
+            repo was created through the website <BR>&gt;</SPAN><SPAN 
+            style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold; COLOR: #c00000; FONT-STYLE: normal">git 
+            clone &lt;repo url&gt; .</SPAN> </LI></OL></LI></OL>
+        <P 
+        style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in 0in 0in 0.75in">If 
+        you already have files there, git will complain that the directory is 
+        not empty. Easiest solution I found was to move them, clone, and bring 
+        them back, unfortunately.</P>
+        <P 
+        style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in 0in 0in 0.75in">Or</P>
+        <P 
+        style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in 0in 0in 0.75in">&gt;<SPAN 
+        style="FONT-WEIGHT: bold; COLOR: #c00000">gh repo clone 
+        &lt;user&gt;/&lt;repo&gt;</SPAN></P>
         <OL 
         style="FONT-SIZE: 11pt; MARGIN-BOTTOM: 0in; FONT-FAMILY: Consolas; unicode-bidi: embed; MARGIN-TOP: 0in; FONT-WEIGHT: normal; DIRECTION: ltr; FONT-STYLE: normal" 
         type=a>
-          <LI lang=en-US 
+          <LI 
+          style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px" 
+          value=2><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: normal; FONT-STYLE: normal">if 
+          repo was created locally through gh CLI</SPAN> </LI></OL>
+        <P 
+        style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in 0in 0in 0.75in">&gt;<SPAN 
+        style="FONT-WEIGHT: bold; COLOR: #c00000">git push</SPAN></P>
+        <OL 
+        style="FONT-SIZE: 11pt; MARGIN-BOTTOM: 0in; FONT-FAMILY: Consolas; unicode-bidi: embed; MARGIN-TOP: 0in; FONT-WEIGHT: normal; DIRECTION: ltr; FONT-STYLE: normal" 
+        type=1>
+          <LI 
+          style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px" 
+          value=4><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: normal; FONT-STYLE: normal">Now 
+          just write your code, commit often, and push reponsibly.</SPAN> 
+          <LI 
+          style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px"><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas">If you are doing part 
+          of the changes from github.com, you will need to download the 
+          changes<BR>&gt;</SPAN><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold; COLOR: #c00000">git 
+          pull</SPAN> </LI></OL>
+        <P 
+style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">&nbsp;</P>
+        <P 
+style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">&nbsp;</P>
+        <H3 
+        style="FONT-SIZE: 12pt; FONT-FAMILY: Calibri; COLOR: #5b9bd5; MARGIN: 0in">View 
+        diff between local and remote (to track your changes)</H3>
+        <P 
+style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">&nbsp;</P>
+        <OL 
+        style="FONT-SIZE: 11pt; MARGIN-BOTTOM: 0in; FONT-FAMILY: Calibri; unicode-bidi: embed; MARGIN-TOP: 0in; FONT-WEIGHT: normal; DIRECTION: ltr; FONT-STYLE: normal" 
+        type=1>
+          <LI 
           style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px" 
           value=1><SPAN 
-          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: normal; FONT-STYLE: normal">if 
-          repo was created through the website <BR>&gt;</SPAN><SPAN 
-          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: bold; COLOR: #c00000; FONT-STYLE: normal">git 
-          clone &lt;repo url&gt;</SPAN> 
-          <LI lang=en-US 
-          style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px"><SPAN 
-          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas">if repo was created 
-          through gh CLI</SPAN> </LI></OL></LI></OL>
-      <P lang=en-US 
-      style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in 0in 0in 0.75in">&gt;<SPAN 
-      style="FONT-WEIGHT: bold; COLOR: #c00000">git push</SPAN></P>
-      <OL 
-      style="FONT-SIZE: 11pt; MARGIN-BOTTOM: 0in; FONT-FAMILY: Consolas; unicode-bidi: embed; MARGIN-TOP: 0in; FONT-WEIGHT: normal; DIRECTION: ltr; FONT-STYLE: normal" 
-      type=1>
-        <LI lang=en-US 
-        style="MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; MARGIN-TOP: 0px" 
-        value=4><SPAN 
-        style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: normal; FONT-STYLE: normal">Now 
-        just write your code, commit often, and push reponsibly.</SPAN> 
-    </LI></OL></TD>
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri; FONT-WEIGHT: normal; FONT-STYLE: normal">&gt;</SPAN><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri; FONT-WEIGHT: bold; COLOR: #c00000; FONT-STYLE: normal">git 
+          difftool </SPAN><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri; FONT-WEIGHT: normal; FONT-STYLE: normal">&lt;branch-name&gt;</SPAN><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri; FONT-WEIGHT: bold; COLOR: #c00000; FONT-STYLE: normal"> 
+          origin/</SPAN><SPAN 
+          style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; FONT-WEIGHT: normal; FONT-STYLE: normal">&lt;branch-name&gt;</SPAN> 
+          </LI></OL></UL></TD>
     <TD 
-    style="FONT-SIZE: 1pt; HEIGHT: 0in; WIDTH: 1.437in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
+    style="FONT-SIZE: 1pt; HEIGHT: 0in; WIDTH: 1.395in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
     vAlign=top>
       <P style="FONT-SIZE: 1pt"></P></TD>
     <TD 
-    style="FONT-SIZE: 1pt; HEIGHT: 0in; WIDTH: 6.5in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
+    style="FONT-SIZE: 1pt; HEIGHT: 0in; WIDTH: 0.584in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
+    vAlign=top>
+      <P style="FONT-SIZE: 1pt"></P></TD>
+    <TD 
+    style="FONT-SIZE: 1pt; HEIGHT: 0in; WIDTH: 5.915in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
     vAlign=top>
       <P style="FONT-SIZE: 1pt"></P></TD></TR>
   <TR>
     <TD 
-    style="FONT-SIZE: 1pt; HEIGHT: 2.43in; WIDTH: 1px; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
+    style="FONT-SIZE: 1pt; HEIGHT: 3.087in; WIDTH: 1px; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
     vAlign=top>
       <P style="FONT-SIZE: 1pt">&nbsp;</P></TD>
     <TD 
-    style="FONT-SIZE: 1pt; HEIGHT: 2.43in; WIDTH: 1.437in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
+    style="FONT-SIZE: 1pt; HEIGHT: 3.087in; WIDTH: 1.395in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
     vAlign=top>
       <P style="FONT-SIZE: 1pt"></P></TD>
     <TD 
-    style="HEIGHT: 2.987in; WIDTH: 6.5in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
-    vAlign=top rowSpan=2>
-      <H2 lang=en-US 
+    style="HEIGHT: 3.087in; WIDTH: 6.5in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
+    vAlign=top colSpan=2>
+      <P style="FONT-SIZE: 6pt; FONT-FAMILY: Consolas; MARGIN: 0in">consolas</P>
+      <H2 
       style="FONT-SIZE: 14pt; FONT-FAMILY: Calibri; COLOR: #2e75b5; MARGIN: 0in">Collaboration 
       (not including fork)</H2>
-      <P lang=en-US 
-      style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">&nbsp;</P>
-      <P lang=en-US 
-      style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">Take all you 
-      learned from the other recipes and just add</P>
-      <P lang=en-US 
-      style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in"><SPAN 
+      <P style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">&nbsp;</P>
+      <P style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">Take all 
+      you learned from the other recipes and just add</P>
+      <P style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in"><SPAN 
       style="FONT-WEIGHT: bold">&gt;</SPAN><SPAN 
       style="FONT-WEIGHT: bold; COLOR: #c00000">git pull</SPAN> from time to 
       time to get the code other people wrote.</P>
-      <P lang=en-US 
-      style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">&nbsp;</P>
-      <P lang=en-US 
-      style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in"><SPAN 
-      style="FONT-STYLE: italic">This section is under-reaserched so I wouldn't 
+      <P style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">&nbsp;</P>
+      <P style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in"><SPAN 
+      style="FONT-STYLE: italic">This section is under-researched so I wouldn't 
       listen to me.</SPAN></P>
-      <P lang=en-US 
-      style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in"><SPAN 
+      <P style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in"><SPAN 
       style="FONT-STYLE: italic">There are probably conventions on merging 
       branches to main which I'm not familiar enough with yet.</SPAN></P>
-      <P lang=en-US 
-      style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">&nbsp;</P>
-      <H2 lang=en-US 
+      <P style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">&nbsp;</P>
+      <H2 
       style="FONT-SIZE: 14pt; FONT-FAMILY: Calibri; COLOR: #2e75b5; MARGIN: 0in">Contribute 
       to a repository (fork)</H2>
-      <P lang=en-US 
-      style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">&nbsp;</P>
-      <P lang=en-US 
-      style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">Need to write 
-      this recipe</P>
-      <P lang=en-US 
-      style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">&nbsp;</P>
-      <P lang=en-US 
-      style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in"><A 
+      <P style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">&nbsp;</P>
+      <P style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">Need to 
+      write this recipe</P>
+      <P style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">&nbsp;</P>
+      <P style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in"><A 
       href="https://docs.github.com/en/get-started/quickstart/fork-a-repo">https://docs.github.com/en/get-started/quickstart/fork-a-repo</A></P>
-      <P lang=en-US 
-      style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">&nbsp;</P>
-      <P lang=en-US 
-      style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">&nbsp;</P></TD></TR>
+      <P style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">&nbsp;</P>
+      <P 
+    style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">&nbsp;</P></TD></TR>
   <TR>
     <TD 
-    style="FONT-SIZE: 1pt; HEIGHT: 0.556in; WIDTH: 1px; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
+    style="FONT-SIZE: 1pt; HEIGHT: 0.109in; WIDTH: 1px; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
     vAlign=top>
       <P style="FONT-SIZE: 1pt">&nbsp;</P></TD>
     <TD 
-    style="FONT-SIZE: 1pt; HEIGHT: 0.556in; WIDTH: 5.811in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
+    style="FONT-SIZE: 1pt; HEIGHT: 0.109in; WIDTH: 1.395in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
     vAlign=top>
       <P style="FONT-SIZE: 1pt"></P></TD>
     <TD 
-    style="FONT-SIZE: 1pt; HEIGHT: 0.556in; WIDTH: 1.437in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
+    style="FONT-SIZE: 1pt; HEIGHT: 0.109in; WIDTH: 0.584in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
     vAlign=top>
-      <P style="FONT-SIZE: 1pt"></P></TD></TR></TBODY></TABLE>
-<DIV 
-style="WIDTH: 0.584in; MARGIN-TOP: 0.151in; DIRECTION: ltr; MARGIN-LEFT: 7.331in">
-<P lang=en-US 
-style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">&nbsp;</P>
-<P lang=en-US 
-style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">&nbsp;</P></DIV></DIV></DIV>
+      <P style="FONT-SIZE: 1pt"></P></TD>
+    <TD 
+    style="FONT-SIZE: 1pt; HEIGHT: 0.109in; WIDTH: 5.915in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
+    vAlign=top>
+      <P style="FONT-SIZE: 1pt"></P></TD></TR>
+  <TR>
+    <TD 
+    style="FONT-SIZE: 1pt; HEIGHT: 0.368in; WIDTH: 1px; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
+    vAlign=top>
+      <P style="FONT-SIZE: 1pt">&nbsp;</P></TD>
+    <TD 
+    style="FONT-SIZE: 1pt; HEIGHT: 0.368in; WIDTH: 1.395in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
+    vAlign=top>
+      <P style="FONT-SIZE: 1pt"></P></TD>
+    <TD 
+    style="HEIGHT: 0.368in; WIDTH: 0.584in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
+    vAlign=top>
+      <P style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">&nbsp;</P>
+      <P 
+    style="FONT-SIZE: 11pt; FONT-FAMILY: Consolas; MARGIN: 0in">&nbsp;</P></TD>
+    <TD 
+    style="FONT-SIZE: 1pt; HEIGHT: 0.368in; WIDTH: 5.915in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
+    vAlign=top>
+      <P style="FONT-SIZE: 1pt"></P></TD></TR>
+  <TR>
+    <TD 
+    style="FONT-SIZE: 1pt; HEIGHT: 1.321in; WIDTH: 1px; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
+    vAlign=top>
+      <P style="FONT-SIZE: 1pt">&nbsp;</P></TD>
+    <TD 
+    style="FONT-SIZE: 1pt; HEIGHT: 1.321in; WIDTH: 1.395in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
+    vAlign=top>
+      <P style="FONT-SIZE: 1pt"></P></TD>
+    <TD 
+    style="FONT-SIZE: 1pt; HEIGHT: 1.321in; WIDTH: 0.584in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
+    vAlign=top>
+      <P style="FONT-SIZE: 1pt"></P></TD>
+    <TD 
+    style="FONT-SIZE: 1pt; HEIGHT: 1.321in; WIDTH: 5.915in; VERTICAL-ALIGN: top; PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; MARGIN: 0in; PADDING-RIGHT: 0pt" 
+    vAlign=top>
+      <P style="FONT-SIZE: 1pt"></P></TD></TR></TBODY></TABLE></DIV></DIV>
 <DIV>
 <P style="MARGIN: 0in">&nbsp;</P>
 <P 
