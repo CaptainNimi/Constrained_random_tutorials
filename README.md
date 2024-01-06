@@ -1,3 +1,3 @@
 Welcome, children.
 
-https://wnim.github.io/constrainedrandomtutorials/
+https://wnim.github.io/
